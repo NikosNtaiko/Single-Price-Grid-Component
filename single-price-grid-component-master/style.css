@@ -1,0 +1,160 @@
+:root{
+    --background-color: #E6EFF6;
+    --font-size: 0.9rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+
+.flex-items{
+    display: flex;
+    gap: 0px;
+}
+
+.community{
+    background-color: white;
+    padding: 30px;
+    width: 650px;
+    border-radius: 5px 5px 0 0;
+}
+
+.community p{
+    color: hsl(218, 22%, 67%);
+}
+
+.monthly-sub{
+    background-color: #2BB3B1;
+    padding: 30px;
+    width: 650px;
+    border-radius: 0 0 0 5px;
+    color: white;
+}
+
+
+
+.monthly-sub p{
+    width: 255px;
+}
+
+.why{
+    background-color: #4ABEBD;
+    padding: 30px;
+    width: 650px;
+    border-radius: 0 0 5px 0;
+}
+
+
+
+h4{
+    color: white;
+}
+
+h1,h2,p,h3,h4{
+    padding-bottom: 12px;
+}
+
+button{
+    width: 250px;
+    padding: 12px;
+    background-color: #BFDF32;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.monthly-sub .flex-items p{
+    color: white;
+    opacity: 0.4;
+}
+
+button:hover{
+    color:#BFDF32;
+    background-color: white;
+    transition: 0.5s;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-top: 5px;
+    color: white;
+    opacity: 0.7;
+}
+
+h1,h2,h3{
+    font-size: 1.2rem;
+}
+
+span{
+    font-size: 2rem;
+    color: white;
+}
+
+h1{
+    color: #42ADA7;
+}
+
+h2{
+    color: #E2F486;
+}
+
+@media (max-width:600px){
+    .container{
+        display: grid;
+        width: 300px;
+    }
+    .flex-items{
+        display: grid;
+        width: 320px;
+    }
+    .why{
+        display: grid;
+        width: 320px;
+        border-radius: 0 0 5px 5px;
+    }
+    .monthly-sub{
+        display: grid;
+        width: 320px;
+        border-radius: 0;
+        color: white;
+    }
+    .monthly-sub .flex-items{
+        display: flex;
+    }
+    .monthly-sub .flex-items p{
+        color: white;
+        opacity: 0.4;
+    }
+    .community{
+        display: grid;
+        width: 320px;
+        text-align: justify;
+    }
+    .community p{
+        width: 250px;
+        line-height: 1.5;
+    }
+}
